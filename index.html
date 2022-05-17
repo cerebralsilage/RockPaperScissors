@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/pics/favicon.ico">
+  	<link rel="stylesheet" type="text/css" href="./css/styles.css"/> 
+  	<title>Rock Paper Scissors</title>
+  </head>
+  
+  <body>
+  	<header>
+  		<h1>Rock, Paper, Scissors</h1>
+  	</header>
+
+    <div class="container">
+      <div class="bkimage">
+      </div>
+      
+      <div class="jsbox">
+    	  <form id="myForm" name="rpsform" onsubmit="return false" method="GET">
+          <label for="userInput"><strong>Choose: </strong></label>
+          <br>
+          <input id="userInput" name="rpsgame"  type="text" required>
+          <br>
+          <input id="playGame" name="rpsgame" type="submit" value="Play">
+          <br>
+          <p class="results"><strong>Results:</strong></p>
+          <br>
+          <p id="dW"></p>
+        </form>
+    	</div>
+    </div>
+
+    <script type="text/javascript" src="./js/rockpaperscissor.js"></script>
+  </body>
+</html>
