@@ -17,12 +17,34 @@
       <div class="bkimage">
       </div>
       
-      <div class="jsbox">
+      <div id="jsbox">
     	  <form id="myForm" name="rpsform" onsubmit="return false" method="GET">
-          <label for="userInput"><strong>Choose: </strong></label>
-          <br>
-          <input id="userInput" name="rpsgame"  type="text" required>
-          <br>
+          <div class="userinputtextcon">
+            <label for="userinput"><strong>Choose: </strong></label>
+            <br>
+            <input id="userinput" className="userinputtext" name="userinputtext"  type="text">
+            <br>
+          </div>
+          <div class="radiocon">
+            <div class="radioInput1">
+              <label for="userinput"><strong>Rock</strong></label>
+              <br>
+              <input id="userinput" className="userinputradio" name="rpsgame"  type="radio" value="rock">
+              <br>
+            </div>
+            <div class="'radioInput2">
+              <label for="userinput"><strong>Paper</strong></label>
+              <br>
+              <input id="userinput" className="userinputradio" name="rpsgame"  type="radio" value="paper">
+              <br>
+            </div>
+            <div class="'radioInput3">
+              <label for="userinput"><strong>Scissors</strong></label>
+              <br>
+              <input id="userinput" className="userinputradio" name="rpsgame"  type="radio" value="scissors">
+              <br>
+            </div>
+          </div>
           <input id="playGame" name="rpsgame" type="submit" value="Play">
           <br>
           <p class="results"><strong>Results:</strong></p>

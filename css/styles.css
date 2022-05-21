@@ -1,19 +1,17 @@
 
 /* =====================  rock, paper, scissor webpage  ======================= */
+@import url("https://use.typekit.net/ghe3mrf.css");
 
 html {
   background-color: black;
 }
-
+ 
 body {
-  margin: 0;
-  background: #9e2b1c; /* Old browsers */
-  background: -moz-linear-gradient(top,  #ff1d00 0%, #050200 49%, #000000 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #ff1d00 0%,#050200 49%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #ff1d00 0%,#050200 49%, #000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e2b1c', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  margin: 0;  
+  background-image: url("../assets/pics/curtain-large.jpg");
   background-size: cover;
-  height: 100vh;
+  background-position: center center;
+  height: 110vh;
   position: absolute;
   width: 100%;
 }
@@ -68,7 +66,7 @@ header h1 {
 
 /* -- Game Box -- */
 
-.jsbox {
+#jsbox {
   box-sizing: border-box;
   height: 340px;
   width: 60%;
@@ -84,7 +82,7 @@ header h1 {
 }
 
 form {
-  width: 80%;
+  width: 90%;
   max-width: 312px;
   text-align: center;
 }
@@ -94,17 +92,35 @@ label {
   font-size: 1.1rem;
 }
 
-#userInput {
+#userinput {
   background-color: #d9d5d5;
   border: 2px inset #6e6c6c;
   padding: 2px 10px;
   margin: 5px 0 20px 0;
   width: 140px;
-  font-family: "cooper black", script, sans-serif;
+  font-family: "cooper-black-std", script, sans-serif;
 }
 
-input {
-  width: 120px;
+.radiocon {
+  display: none;
+  margin-bottom: 10px;
+  padding-right: 0;
+  justify-content: center;
+}
+
+.userinputradio {
+  width: 80px;
+  margin-top: 5px;
+}
+
+.userinputradio2 {
+  width: 80px;
+  margin-top: 5px;
+}
+
+.userinputradio3 {
+  width: 80px;
+  margin-top: 5px;
 }
 
 #dW {
@@ -114,7 +130,7 @@ input {
   border: 2px inset #6e6c6c;   
   padding: 10px;
   margin: 0 auto;
-  font-family: "cooper black", script, sans-serif;
+  font-family: "Cooper-black-std", script, sans-serif;
 }
 
 #playGame {
@@ -123,7 +139,7 @@ input {
   font-weight: bold;
   height: 30px;
   box-shadow: 2px 2px gray;
-  font-family: "cooper black", script, sans-serif;
+  font-family: "Cooper black", script, sans-serif;
   background-color: #bcbaba;
 }
 
@@ -141,8 +157,16 @@ input {
 /* --  @Media  -- */
 
 @media only screen and (max-width: 597px) {
+  body {
+    background-image: url("../assets/pics/curtain-small.jpg");
+  }
+
   header h1 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+  }
+
+  .bkimage {
+    height: 130px;
   }
 
   .jsbox {
@@ -153,10 +177,7 @@ input {
 @media only screen and (max-width: 500px) {
   header h1 {
     font-size: 3.4rem;
-  }
-
-  .bkimage {
-    height: 130px;
+    margin-top: 40px;
   }
 }
 
@@ -170,16 +191,16 @@ input {
     margin-bottom: 50px;
   }
 
-  #userInput {
-    width: 90px;
-  }
-
   #dWInner {
     width: 90px;
   }
 
   .jsbox {
     border-width: 20px;
+  }
+
+  #userInput {
+    width: 90px;
   }
 }
 

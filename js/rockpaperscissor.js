@@ -6,14 +6,26 @@ const results = document.getElementById('dW');
 
 // Get User Input
 const getUserChoice = userInput => {
-  userInput = document.getElementById('userInput').value;
-  userInput = userInput.toLowerCase();
-  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
+  userInputText = document.getElementById('userinput').value;
+  userInputRadio = document.querySelector('userinputradio');
+ /* userInputPaper = document.querySelector('userinputradio2');
+  userInputScissors = document.querySelector('userinputradio3'); */
+  userInputText = userInputText.toLowerCase();
+  if (userInputText === 'rock' || userInputText === 'paper' || userInputText === 'scissors' || userInputText === 'bomb') {
+    userInput = userInputText;
     return userInput;
-  }
-  else {
+  }  /*else if (document.querySelector('userinputradio1')){
+    userInput = 'rock';
+    return userInput;
+  } else if (document.querySelector('userinputradio2')) {
+      userInput = 'paper';
+      return userInput;
+  } else if (document.querySelector('userinputradio3')) {
+      userInput = 'scissors';
+      return userInput;
+  } */ else {
     results.innerHTML = "Please enter rock, paper, or scissors";
-  }
+  };
 };
 
 
