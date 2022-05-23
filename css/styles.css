@@ -3,17 +3,15 @@
 @import url("https://use.typekit.net/ghe3mrf.css");
 
 html {
-  background-color: black;
+  margin: 0;
+  background-image: url(../assets/pics/curtain-large.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
 }
+
  
 body {
-  margin: 0;  
-  background-image: url("../assets/pics/curtain-large.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 110vh;
-  position: absolute;
-  width: 100%;
+  margin: 0;
 }
 
 p {
@@ -21,7 +19,7 @@ p {
 }
 
 .container {
-  height: 77vh;
+  margin-bottom: 40px;
 }
 
 header h1 {
@@ -157,10 +155,6 @@ label {
 /* --  @Media  -- */
 
 @media only screen and (max-width: 597px) {
-  body {
-    background-image: url("../assets/pics/curtain-small.jpg");
-  }
-
   header h1 {
     margin-bottom: 50px;
   }
@@ -203,6 +197,7 @@ label {
     width: 90px;
   }
 }
+
 
 
 
